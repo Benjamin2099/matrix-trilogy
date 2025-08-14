@@ -1,0 +1,16 @@
+[project]
+name = "matrix-trilogy"
+version = "0.1.0"
+description = "Theory-aware Matrix I–III logic simulation: timeline + agent modes (Neo, Smith, Machine Collective)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+matrix-sim = "matrix_sim.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
